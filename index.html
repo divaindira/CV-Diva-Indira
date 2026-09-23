@@ -2,39 +2,291 @@
 <html lang="id">
 
 <head>
-        
     <meta charset="UTF-8">
-        <title>CV - DIVA INDIRA ZAHRA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - DIVA INDIRA ZAHRA</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #fdf2f4;
+            color: #333333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(230, 100, 140, 0.12);
+            border: 1px solid #f8d7da;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding-bottom: 24px;
+            border-bottom: 2px dashed #f4acb7;
+            margin-bottom: 24px;
+        }
+
+        .header-text h1 {
+            color: #d81b60;
+            font-size: 2.2rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .header-text p {
+            color: #555555;
+            font-size: 1.05rem;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid #f8ad9d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #c2185b;
+            font-size: 1.35rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            background-color: #ffe6ea;
+            padding: 6px 14px;
+            border-left: 5px solid #d81b60;
+            border-radius: 4px;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            font-size: 1.05rem;
+        }
+
+        .item-title {
+            color: #880e4f;
+            font-size: 1.1rem;
+        }
+
+        .item-date {
+            color: #a0526d;
+            font-size: 0.95rem;
+            font-style: italic;
+            margin-bottom: 6px;
+            display: inline-block;
+        }
+
+        .skills-list li {
+            list-style-type: none;
+            background-color: #fff0f3;
+            padding: 8px 14px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            border: 1px solid #ffccd5;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 150px;
+            }
+
+            .cv-container {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-        <!-- HEADER / INFORMASI KONTAK -->
-        <h1>DIVA INDIRA ZAHRA</h1>
-        <p>
-                Bekasi, Indonesia | 0812-9898-0443 | divaindira444@gmail.com
-            </p>
+    <div class="cv-container">
 
-        
-    <hr>
+        <div class="header">
+            <div class="header-text">
+                <h1>DIVA INDIRA ZAHRA</h1>
+                <p>Jakarta, Indonesia | 0812-9898-0443 | divaindira444@gmail.com</p>
+            </div>
+            <img src="profile diva.jpg" alt="Foto Diva Indira Zahra" class="profile-img">
+        </div>
 
-        <!-- PROFIL -->
-        <h2>Profil</h2>
-        <p>
-                Mahasiswa semester tiga Program Studi Sistem Informasi di Universitas
-        Telkom Jakarta dengan ketertarikan pada teknologi informasi dan bidang
-        kreatif digital. Memiliki pengalaman dalam pengelolaan data, project
-        digital, penyampaian materi, serta penggunaan tools seperti SAP,
-        Microsoft Excel, dan Figma. Memiliki kemampuan komunikasi, problem solving,
-        kreativitas, dan pengelolaan informasi secara terstruktur.
-            </p>
+        <!-- PROFIL -->
+        <h2>Profil</h2>
+        <p>
+            Mahasiswa semester tiga Program Studi Sistem Informasi di Telkom University Jakarta dengan ketertarikan pada
+            teknologi
+            informasi dan bidang kreatif digital. Memiliki pengalaman dalam pengelolaan data, proyek digital,
+            penyampaian materi,
+            serta penggunaan tools seperti SAP, Microsoft Excel, dan Figma. Memiliki kemampuan komunikasi, problem
+            solving,
+            kreativitas, dan pengelolaan informasi secara terstruktur.
+        </p>
 
-        
-    <hr>
+        <!-- PENDIDIKAN -->
+        <h2>Pendidikan</h2>
+        <p>
+            <b class="item-title">Telkom University Jakarta</b><br>
+            Jurusan Sistem Informasi<br>
+            IPK saat ini: 3.74
+        </p>
+        <p>
+            <b class="item-title">SMA La Tansa</b><br>
+            Jurusan IPA<br>
+            Rata-rata nilai terakhir: 89.05
+        </p>
 
-        <!-- PENDIDIKAN -->
-        <h2>Pendidikan</h2>
-        <p>
+        <!-- PENGALAMAN KERJA -->
+        <h2>Pengalaman Kerja</h2>
+
+        <div>
+            <b class="item-title">Content & Social Media Admin</b> - Toko Mas Sinar Jaya (Cipanas, Lebak - Banten)<br>
+            <span class="item-date">Aug 2026 - Sekarang</span>
+            <ul>
+                <li>Mengidentifikasi penurunan penjualan toko sekitar 25 gram/hari dan mengusulkan penggunaan media
+                    sosial
+                    sebagai sarana promosi untuk menjangkau pelanggan lebih luas.</li>
+                <li>Menyusun konten, caption, dan materi promosi serta memberikan rekomendasi model perhiasan
+                    berdasarkan tren,
+                    target market, dan minat pelanggan, sehingga membantu mengembangkan strategi promosi yang lebih
+                    relevan
+                    dengan kebutuhan pasar.</li>
+                <li>Mengelola media sosial dan berinteraksi langsung dengan pelanggan untuk memahami kebutuhan,
+                    preferensi serta
+                    respons terhadap produk dan promosi, sehingga mengembangkan kemampuan komunikasi dan berpikir
+                    berorientasi
+                    pada pelanggan.</li>
+                <li>Menjalankan strategi promosi hingga penjualan meningkat dari sekitar 25 gram/hari menjadi 100
+                    gram/hari,
+                    sekaligus mengembangkan kemampuan problem solving, komunikasi, pengambilan keputusan, dan market
+                    awareness
+                    melalui proses memahami target market, kebutuhan dan minat pelanggan, perkembangan tren, serta
+                    penyesuaian
+                    ide produk dan promosi dengan kondisi pasar.</li>
+            </ul>
+        </div>
+
+        <div>
+            <b class="item-title">Project & Administrative Support</b> - Apotek & Specialist Center (Cipanas, Lebak -
+            Banten)<br>
+            <span class="item-date">Aug 2026 - Sekarang</span>
+            <ul>
+                <li>Membantu membuat logo, poster, stempel, dan kebutuhan visual lainnya serta memberikan ide promosi,
+                    sehingga
+                    mengembangkan kreativitas dan kemampuan menerjemahkan kebutuhan menjadi desain.</li>
+                <li>Membantu pencatatan stok menggunakan spreadsheet secara terstruktur dan teratur sehingga memperoleh
+                    pengalaman dalam pengelolaan data dan penggunaan tools digital.</li>
+            </ul>
+        </div>
+
+        <!-- PROJECT & KEGIATAN -->
+        <h2>Project & Kegiatan</h2>
+
+        <div>
+            <b class="item-title">UI/UX Design</b> - Project Perkuliahan<br>
+            <span class="item-date">2026</span>
+            <ul>
+                <li>Merancang tampilan dan alur aplikasi menggunakan Figma dengan mempertimbangkan kemudahan pengguna
+                    dalam
+                    memahami informasi dan navigasi.</li>
+                <li>Mengembangkan kemampuan UI/UX, kreativitas, dan user-oriented problem solving melalui proses
+                    merancang
+                    berdasarkan perspektif pengguna.</li>
+            </ul>
+        </div>
+
+        <div>
+            <b class="item-title">Project Sosial Masyarakat</b> - KKI Panti Suryo<br>
+            <span class="item-date">2026</span>
+            <ul>
+                <li>Mempersiapkan acara, materi dan laporan kegiatan bersama kelompok yang kemudian dikembangkan menjadi
+                    jurnal
+                    oleh dosen.</li>
+                <li>Mengembangkan kemampuan koordinasi, penyusunan informasi, dan dokumentasi kegiatan secara
+                    sistematis.</li>
+            </ul>
+        </div>
+
+        <div>
+            <b class="item-title">Teaching Practice</b> - Pengajar Reading<br>
+            <span class="item-date">2025</span>
+            <ul>
+                <li>Mengajar materi Reading kepada siswa kelas 3 SMP dengan menyampaikan materi secara sederhana dan
+                    mudah
+                    dipahami.</li>
+                <li>Mengembangkan public speaking dan knowledge delivery melalui pengalaman menyampaikan materi sesuai
+                    pemahaman
+                    dan respon siswa.</li>
+                <li>Memperoleh predikat "Memuaskan" dan sertifikat sebagai bukti partisipasi.</li>
+            </ul>
+        </div>
+
+        <!-- ORGANISASI & KEGIATAN -->
+        <h2>Organisasi & Kegiatan</h2>
+        <ul>
+            <li>
+                <b class="item-title">Penanggung Jawab Keuangan & Pendataan Barang</b> - Kantin Sekolah (2023 -
+                2024)<br>
+                Mengelola pemasukan, pengeluaran, dan stock barang sehingga mengembangkan data management dan pencatatan
+                informasi secara terstruktur.
+            </li>
+            <li style="margin-top: 8px;">
+                <b class="item-title">Penanggung Jawab Koordinasi Adik Kelas</b> - Acara Konsulat (2024)<br>
+                Membimbing dan mengoordinasi adik kelas selama persiapan acara, mengembangkan leadership dan kemampuan
+                koordinasi.
+            </li>
+            <li style="margin-top: 8px;">
+                <b class="item-title">Anggota OSIS</b> - Bagian Keputrian (2024)<br>
+                Berpartisipasi dalam kegiatan organisasi dan menjalankan tanggung jawab sesuai peran yang diberikan.
+            </li>
+        </ul>
+
+        <!-- KETERAMPILAN -->
+        <h2>Keterampilan</h2>
+        <ul class="skills-list" style="margin-left: 0;">
+            <li><b>Communication:</b> Komunikasi, Public Speaking, Penyampaian Materi</li>
+            <li><b>Creative:</b> Video Editing, Desain Visual, Editing Logo, Content Creation</li>
+            <li><b>Technical:</b> SAP, Microsoft Word, Microsoft Excel, Google Workspace, Figma, Dasar UI/UX Design,
+                Dasar Pemrograman, MySQL & Dasar Database</li>
+            <li><b>Other:</b> Problem Solving, Kerja Sama Tim, Kreativitas, Manajemen Waktu, Ketelitian, Adaptasi</li>
+            <li><b>Languages:</b> Bahasa Inggris (Intermediate), Bahasa Arab (Intermediate)</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>        <p>
                 <b>Telkom University Jakarta</b><br>
                 Jurusan Sistem Informasi<br>
                 IPK saat ini: 3.74
